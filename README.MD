@@ -1,21 +1,21 @@
 # Personal Finance Tracker
 
-A comprehensive web application built with Django to help users track their income and expenses, manage multiple wallets, and maintain a clear overview of their financial health. 
+A comprehensive web application built with Django to help users track their income and expenses, manage multiple wallets, and maintain a clear overview of their financial health.
 
 ## 🚀 Features
 
-* **User Authentication (`accounts`)**: Secure sign-up, login, and profile management.
-* **Wallet Management (`wallets`)**: Create and manage multiple accounts or cards to track distinct balances.
-* **Transaction Tracking (`finance`)**: Record daily income and expenses, categorize transactions, and view financial history.
-* **Customer Support (`support`)**: Integrated ticketing or support app to handle user inquiries and feedback.
-* **Multi-language Support (`locale`)**: Internationalization (i18n) support for making the application accessible in multiple languages.
-* **Responsive UI**: Clean, template-driven frontend utilizing custom HTML and CSS.
+- **User Authentication (`accounts`)**: Secure sign-up, login, and profile management.
+- **Wallet Management (`wallets`)**: Create and manage multiple accounts or cards to track distinct balances.
+- **Transaction Tracking (`finance`)**: Record daily income and expenses, categorize transactions, and view financial history.
+- **Customer Support (`support`)**: Integrated ticketing or support app to handle user inquiries and feedback.
+- **Multi-language Support (`locale`)**: Internationalization (i18n) support for making the application accessible in multiple languages.
+- **Responsive UI**: Clean, template-driven frontend utilizing custom HTML and CSS.
 
 ## 🛠️ Tech Stack
 
-* **Backend**: Python, Django
-* **Database**: SQLite3 (Development) 
-* **Frontend**: HTML5, CSS3
+- **Backend**: Python, Django
+- **Database**: SQLite3 (Development)
+- **Frontend**: HTML5, CSS3
 
 ## 📂 Project Structure
 
@@ -32,35 +32,48 @@ money_tracker/
 ├── wallets/        # Wallet and balance management
 ├── manage.py       # Django project management script
 └── db.sqlite3      # Local development database
-⚙️ Local Setup and Installation
-Clone the repository:
+```
 
-Bash
-git clone [https://github.com/abdurakhmanovjohn/money_tracker.git](https://github.com/abdurakhmanovjohn/money_tracker.git)
-cd money_tracker
-Create and activate a virtual environment:
+## ⚙️ Local Setup and Installation
 
-Bash
-python -m venv venv
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
-Install dependencies:
-(Assuming a requirements.txt exists. If not, you will need to install Django manually: pip install django)
+1. **Clone the repository:**
 
-Bash
-pip install -r requirements.txt
-Apply database migrations:
+   ```bash
+   git clone [https://github.com/abdurakhmanovjohn/money_tracker.git](https://github.com/abdurakhmanovjohn/money_tracker.git)
+   cd money_tracker
+   ```
 
-Bash
-python manage.py migrate
-Create a superuser (optional, for admin access):
+2. **Create and activate a virtual environment:**
 
-Bash
-python manage.py createsuperuser
-Run the development server:
+   ```bash
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
 
-Bash
-python manage.py runserver
-The application will be available at http://127.0.0.1:8000/.
+3. **Install dependencies:**
+   _(Assuming a requirements.txt exists. If not, you will need to install Django manually: `pip install django`)_
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Apply database migrations:**
+
+   ```bash
+   python manage.py migrate
+   ```
+
+5. **Create a superuser (optional, for admin access):**
+
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+6. **Run the development server:**
+   ```bash
+   python manage.py runserver
+   ```
+   The application will be available at `http://127.0.0.1:8000/`.
